@@ -1,0 +1,23 @@
+{
+  "name": "controlador-casa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulink12/controlador-casa.git"
+  },
+  "author": "Lucas Albuquerque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soulink12/controlador-casa/issues"
+  },
+  "homepage": "https://github.com/soulink12/controlador-casa#readme",
+  "dependencies": {
+    "@google-cloud/dialogflow-cx": "^2.5.0",
+    "firebase": "^8.4.3"
+  }
+}
