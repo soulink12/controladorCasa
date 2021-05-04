@@ -1,6 +1,7 @@
 const {WebHookClient} = require("@google-cloud/dialogflow-cx");
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
+const axios = require("axios");
 
 admin.initializeApp();
 
@@ -22,6 +23,12 @@ admin.initializeApp();
                 ],
             },
 };
+            axios
+            .get("https://testandodialog.glitch.me/")
+            .then((res) => {
+              console.log(`statusCode: ${res.statusCode}`);
+              console.log(res);
+            });
         } else {
             jsonResponse = {
               // fulfillment text response to be sent to the agent if there are no defined responses for the specified tag
